@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+       .blink {
+                  animation: blink-animation 1s steps(5, start) infinite;
+                  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+                }
+                @keyframes blink-animation {
+                  to {
+                    visibility: hidden;
+                  }
+                }
+                @-webkit-keyframes blink-animation {
+                  to {
+                    visibility: hidden;
+                  }
+                }
+   </style>
 <head>
   <meta charset="UTF-8">
   <title>Oktay's Personal Page</title>
@@ -129,7 +144,7 @@ I have co-authored over 30 scientific publications, and a member of IEEE and IEE
                 <div class="container-md">
                   <h2>Highlights</h2>
                   <ul>
-                    <blink>NEW! </blink><li><a href="https://github.com/oktaykarakus/GG-Rician-SAR-Image-Modelling" target="_blank"> GG-Rician SAR Image Modelling Matlab code has been published! </a></li>
+                    <span class="blink">NEW!</span><a href="https://github.com/oktaykarakus/GG-Rician-SAR-Image-Modelling" target="_blank"> GG-Rician SAR Image Modelling Matlab code has been published! </a></li>
                     <li><a href="https://assensar.blogs.bristol.ac.uk/" target="_blank">AssenSAR Project</a></li>
                     <li><a href="https://github.com/oktaykarakus/AssenSAR-Wake-Detector" target="_blank">Ship Wake Detection Matlab code has been published! </a></li>
                     <li><a href="https://oktaykarakus.github.io/Quant-LUS/" target="_blank">QuantLUS: COVID-19 inspection on lung ultrasound (incl. code) </a></li>
